@@ -1,10 +1,16 @@
 (TeX-add-style-hook "presentation"
  (lambda ()
+    (LaTeX-add-labels
+     "eq:eq1"
+     "eq:eq2"
+     "eq:eq3"
+     "eq:eq4")
     (TeX-add-symbols
      "tick"
      "cross")
     (TeX-run-style-hooks
      "pifont"
+     "mathtools"
      "adjustbox"
      "tikz-qtree"
      "xifthen"
